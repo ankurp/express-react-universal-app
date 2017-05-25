@@ -1,0 +1,25 @@
+{
+  "name": "react-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "babelify": "^7.3.0",
+    "express": "^4.15.3",
+    "express-browserify": "^1.0.2",
+    "express-react-views": "^0.10.2",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "uglifyify": "^3.0.4"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ],
+    "ignore": "node_modules"
+  }
+}
