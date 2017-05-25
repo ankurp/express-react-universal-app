@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from '../../views/app.jsx';
+import Main from '../../views/main.jsx';
 
-const props = JSON.parse(document.getElementById('bootstrap-data').innerText);
-
-ReactDOM.render(<App {...props} />, document.getElementById('root'));
+ReactDOM.render(<Main {...window.__INITIAL_STATE__} />, document.getElementById('root'));

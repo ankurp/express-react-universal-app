@@ -1,7 +1,10 @@
+require('dotenv').config({ silent: true });
+
 const express = require('express');
 const expressBrowserify = require('express-browserify');
 
 const app = express();
+const port = process.env.PORT || 4321;
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jsx');
@@ -23,4 +26,6 @@ app.get('/', function(req, res){
   res.render('index', { name: 'John' });
 });
 
-app.listen(4321)
+app.listen(port, () => {
+  console.log('Server running on port: %d', port);
+});

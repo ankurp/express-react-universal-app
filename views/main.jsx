@@ -1,6 +1,6 @@
 const React = require('react');
 
-class App extends React.Component {
+class Main extends React.Component {
   onClick() {
     window.alert('Hello');
   }
@@ -14,4 +14,4 @@ class App extends React.Component {
   }
 }
 
-module.exports = App;
+module.exports = Main;
